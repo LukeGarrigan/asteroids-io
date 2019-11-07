@@ -191,6 +191,8 @@ window.setup = function () {
     if(invalidUsernameLabel){
       invalidUsernameLabel.remove();
     }
+    button.remove();
+    input.remove();
     invalidUsernameLabel = createElement('h2', `Username ${invalidUsername} already taken`);
     invalidUsernameLabel.position(window.innerWidth / 2 - 250, window.innerHeight / 2 - 80);
     let colour = color(255, 23, 32);
